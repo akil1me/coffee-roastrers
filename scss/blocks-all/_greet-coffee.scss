@@ -56,6 +56,11 @@
 }
 
 @media only screen and (max-width:767px) {
+  .greet-coffee__inner {
+    padding: 104px 0;
+    padding-left: 86px;
+  }
+
   .greet-coffee__title {
     font-size: 48px;
     line-height: 48px;
@@ -67,5 +72,27 @@
 
   .greet-coffee__inner {
     background-image: url("../../img/greet_coffee-bg-image-2.jpg");
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .greet-coffee__inner {
+    padding: 100px 10px;
+  }
+
+  .greet-coffee__content {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .greet-coffee__inner {
+    background-image: url("../../img/greet_coffee-bg-image-3.jpg");
+  }
+
+  .greet-coffee__title {
+    font-size: 40px;
+    line-height: 40px;
   }
 }
