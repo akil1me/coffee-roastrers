@@ -59,7 +59,24 @@
 }
 
 .product-item:hover {
+  background-color: #FDD6BA;
   transform: scale(0.96);
+}
+
+.product-item:hover>svg>path {
+  fill: #0E8784;
+}
+
+.product-item:hover>.product-item__img1 path {
+  fill: #0E8784;
+}
+
+.product-item:hover .product-item__title {
+  color: #333D4B;
+}
+
+.product-item:hover .product-item__text {
+  color: #333D4B;
 }
 
 .product-item__title {
