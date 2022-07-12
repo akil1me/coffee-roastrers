@@ -1,0 +1,35 @@
+.intro-second {
+  margin-top: 155px;
+  margin-bottom: 0;
+}
+
+.intro-second__inner {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  padding-left: 85px;
+  background-color: #333d4b;
+}
+
+.intro-second__span1,
+.intro-second__span2,
+.intro-second__span3 {
+  background-color: transparent;
+}
+
+.intro__item--title {
+  color: #FEFCF7;
+}
+
+.intro__item--text {
+  color: #FEFCF7;
+}
+
+@include responsible(966px) {
+  .intro-second__inner {
+    padding-top: 10px;
+  }
+
+  .intro-second__inner {
+    padding-left: 0;
+  }
+}
