@@ -1,6 +1,6 @@
 .commitment {
   margin-top: 168px;
-  margin-bottom: 120px;
+  margin-bottom: 220px;
 }
 
 .commitment__content {
@@ -60,7 +60,7 @@
 @include responsible(763px) {
   .commitment {
     margin-top: 144px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   .commitment__inner {
@@ -85,7 +85,7 @@
 @include responsible(491px) {
   .commitment {
     margin-top: 120px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
 
   .commitment__img {

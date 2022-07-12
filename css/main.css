@@ -399,6 +399,7 @@ body {
 }
 
 .header {
+  position: relative;
   padding: 44px 0;
 }
 
@@ -438,6 +439,54 @@ body {
   display: none;
 }
 
+.humburger__modal {
+  position: absolute;
+  top: -90px;
+  right: 0;
+  left: 0;
+  bottom: -400px;
+  z-index: 1;
+  width: 95%;
+  padding-top: 50px;
+  height: 250px;
+  text-align: center;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 0 100px 100px white;
+  display: none;
+}
+
+.humburger__link {
+  font-family: "Fraunces", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #333D4B;
+  text-transform: uppercase;
+}
+
+.humburger__item + .humburger__item {
+  margin-top: 25px;
+}
+
+.humburger__img-x {
+  display: none;
+}
+
+.humburger__check:checked ~ .humburger__modal {
+  display: block;
+}
+
+.humburger__check:checked ~ .humburger__modal ~ .humburger__img {
+  display: none;
+}
+
+.humburger__check:checked ~ .humburger__modal ~ .humburger__img-x {
+  display: block;
+}
+
 @media only screen and (max-width: 659px) {
   .header {
     padding: 48px 0;
@@ -447,6 +496,16 @@ body {
   }
   .humburger {
     display: block;
+  }
+}
+@media only screen and (max-width: 444px) {
+  .humburger__img {
+    width: 22px;
+    height: 14px;
+  }
+  .humburger__img-x {
+    width: 22px;
+    height: 14px;
   }
 }
 .logo {
@@ -1084,7 +1143,7 @@ body {
 }
 .commitment {
   margin-top: 168px;
-  margin-bottom: 120px;
+  margin-bottom: 220px;
 }
 
 .commitment__content {
@@ -1141,7 +1200,7 @@ body {
 @media only screen and (max-width: 763px) {
   .commitment {
     margin-top: 144px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
   .commitment__inner {
     justify-content: space-between;
@@ -1161,7 +1220,7 @@ body {
 @media only screen and (max-width: 491px) {
   .commitment {
     margin-top: 120px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
   }
   .commitment__img {
     width: 327px;
@@ -1174,6 +1233,127 @@ body {
 @media only screen and (max-width: 340px) {
   .commitment__img {
     width: 100%;
+  }
+}
+.quality__inner {
+  position: relative;
+  padding-top: 88px;
+  padding-left: 85px;
+  padding-bottom: 176px;
+  background-color: #333d4b;
+}
+
+.quality__content {
+  max-width: 540px;
+}
+
+.quality__title {
+  margin-bottom: 32px;
+  font-family: "Fraunces", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fefcf7;
+}
+
+.quality__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+.quality__img {
+  width: 445px;
+  height: 474px;
+  position: absolute;
+  top: -90px;
+  right: 60px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1186px) {
+  .quality__inner {
+    margin-top: 350px;
+    padding-top: 230px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 67px;
+  }
+  .quality__content {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .quality__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .quality__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .quality__img {
+    width: 80%;
+    height: 320px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: -150px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 578px) {
+  .quality__inner {
+    margin-top: 0;
+    padding-top: 200px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 67px;
+  }
+  .quality__content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .quality__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .quality__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .quality__img {
+    width: 90%;
+    height: 220px;
+    top: -80px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .quality__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .quality__text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .quality__title {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 .footer {

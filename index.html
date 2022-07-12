@@ -37,9 +37,29 @@
           </ul>
         </nav>
 
-        <button class="humburger" type="button">
-          <img src="./img/hamburger.svg" alt="humburger">
-        </button>
+        <label class="haeder__humurger humburger" for="humurger">
+          <input class="visually-hidden humburger__check" type="checkbox" name="humurger" id="humurger">
+
+          <div class="humburger__modal">
+            <ul class="humburger__list">
+              <li class="humburger__item">
+                <a class="humburger__link" href="index.html">HOME</a>
+              </li>
+
+              <li class="humburger__item">
+                <a class="humburger__link" href="aboutus.html">ABOUT US</a>
+              </li>
+
+              <li class="humburger__item">
+                <a class="humburger__link" href="#link">Create your plan</a>
+              </li>
+            </ul>
+          </div>
+
+          <img class="humburger__img" src="./img/hamburger.svg" alt="humburger" width="32" height="18">
+
+          <img class="humburger__img-x" src="./img/hamburger-x.svg" alt="humburger-x" width="32" height="18">
+        </label>
       </div>
     </div>
   </header>
@@ -280,11 +300,11 @@
 
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__link" href="#link">HOME</a>
+              <a class="footer__link" href="index.html">HOME</a>
             </li>
 
             <li class="footer__item">
-              <a class="footer__link" href="#link">ABOUT US</a>
+              <a class="footer__link" href="aboutus.html">ABOUT US</a>
             </li>
 
             <li class="footer__item">
