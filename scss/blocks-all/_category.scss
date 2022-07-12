@@ -1,0 +1,279 @@
+.category {
+  margin: 168px 0;
+}
+
+.category__inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sorted-list__item {
+  cursor: grab;
+  max-width: 255px;
+  padding: 24px 0;
+  border-bottom: 1px solid #83888F;
+  display: flex;
+  align-items: center;
+}
+
+.sorted-list__item+.sorted-list__item {
+  margin-top: 5px;
+}
+
+.sorted-list__span {
+  margin-right: 28px;
+  font-family: 'Fraunces', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888F;
+}
+
+.sorted-list__item:hover .sorted-list__span {
+  color: #0E8784;
+
+}
+
+.sorted-list__item:hover>p {
+  color: #83888F;
+}
+
+.sorted-list p {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.select {
+  width: 730px;
+}
+
+.select__check {
+  cursor: grab;
+}
+
+.select__inner {
+  position: relative;
+  margin: auto;
+  margin-bottom: 88px;
+}
+
+.check:hover {
+  opacity: 0.8;
+}
+
+.check__content {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #83888F;
+}
+
+.check__modal {
+  margin-top: 56px;
+  display: none;
+}
+
+.check__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.check__item {
+  max-width: 228px;
+  background-color: #F4F1EB;
+  padding: 32px 28px 84px;
+  border-radius: 8px;
+}
+
+.check__item:hover {
+  background-color: #0E8784;
+}
+
+.check__item:active {
+  background-color: #FDD6BA;
+}
+
+.check__title {
+  font-family: 'Fraunces', sans-serif;
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333D4B;
+}
+
+.check__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333D4B;
+}
+
+.check__item:hover .check__title {
+  color: #ffffff;
+}
+
+.check__item:hover .check__text {
+  color: #ffffff;
+}
+
+.check__item:active .check__title {
+  color: #333D4B;
+}
+
+.check__item:active .check__text {
+  color: #333D4B;
+}
+
+.check-input:checked~.check__modal {
+  display: block;
+}
+
+.check-input:checked~.check__modal~.check__image {
+  transform: rotate(180deg);
+}
+
+.check__image {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+.select__summury {
+  max-width: 730px;
+  padding: 32px 64px;
+  background-color: #2C343E;
+}
+
+.summury__title {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.summury__quote {
+  font-family: 'Fraunces', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 40px;
+  color: #ffffff;
+
+}
+
+.summury__quote span {
+  color: #0e8784;
+}
+
+.select__link {
+  text-align: right;
+  margin-top: 40px;
+}
+
+@include responsible(1075px) {
+  .category__left {
+    display: none;
+  }
+
+  .select {
+    margin: 0 auto;
+  }
+}
+
+@include responsible(791px) {
+  .category {
+    margin: 140px 0;
+  }
+
+  .select__summury {
+    padding: 27px 44px;
+  }
+
+  .select {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .check__content {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .check__item {
+    max-width: 223px;
+  }
+
+  .select__link {
+    text-align: center;
+  }
+}
+
+@include responsible(715px) {
+  .check__list {
+    flex-direction: column;
+  }
+
+  .check__item+.check__item {
+    margin-top: 16px;
+  }
+
+  .check__item {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@include responsible(571px) {
+  .category {
+    margin: 120px 0;
+  }
+
+  .select__summury {
+    padding: 32px 25px;
+  }
+
+  .check__content {
+    font-size: 24px;
+    line-height: 28px;
+
+  }
+
+  .check__image {
+    top: 10px;
+
+  }
+
+  .check__item {
+    padding: 25px;
+    text-align: center;
+  }
+}
+
+@include responsible(413px) {
+  .check__content {
+    max-width: 230px;
+  }
+}
+
+@include responsible(333px) {
+  .check__content {
+    max-width: 170px;
+  }
+
+  .summury__quote {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
