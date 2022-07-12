@@ -1,0 +1,74 @@
+.about-us__inner {
+  padding-top: 137px;
+  padding-bottom: 137px;
+  padding-left: 85px;
+  background-image: url("../../img/bg-img-aboutus.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.about-us__content {
+  max-width: 445px;
+}
+
+.about-us__title {
+  font-family: 'Fraunces', sans-serif;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #fefcf7;
+}
+
+.about-us__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefCf7;
+}
+
+@include responsible(689px) {
+  .about-us__inner {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    padding-left: 58px;
+  }
+
+  .about-us__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .about-us__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@include responsible(566px) {
+  .about-us__inner {
+    padding-top: 111px;
+    padding-bottom: 87px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .about-us__content {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@include responsible(390px) {
+  .about-us__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .about-us__inner {
+    background-image: url("../../img/bg-img-aboutus-mobile.jpg");
+  }
+}
