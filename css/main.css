@@ -1078,6 +1078,7 @@ body {
   padding-bottom: 137px;
   padding-left: 85px;
   background-image: url("../../img/bg-img-aboutus.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 10px;
@@ -1432,6 +1433,78 @@ body {
   }
   .item-continet + .item-continet {
     margin-top: 80px;
+  }
+}
+.creet__inner {
+  padding: 134px 0;
+  padding-left: 85px;
+  background-image: url("../../img/creet-bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.creet__title {
+  margin-bottom: 32px;
+  font-family: "Fraunces", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fefcf7;
+}
+
+.creet__text {
+  max-width: 445px;
+}
+
+.creet__text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 790px) {
+  .creet__inner {
+    padding: 127px 0;
+    padding-left: 58px;
+  }
+  .creet__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .creet__text {
+    max-width: 398px;
+  }
+  .creet__text p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 505px) {
+  .creet__inner {
+    padding: 101px 20px 136px;
+    text-align: center;
+    background-image: url("../../img/creet-bg-img-mobile.jpg");
+  }
+  .creet__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .creet__text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 356px) {
+  .creet__inner {
+    padding: 101px 0 136px;
   }
 }
 .footer {
